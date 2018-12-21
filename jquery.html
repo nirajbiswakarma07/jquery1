@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./Stylesheet/style.css">
+</head>
+<body>
+<div class = "containsMenu" style="position: fixed; top: 0; left: 0;">
+
+<input type="image" name="image" src="ad.jpeg">
+
+<ul id="navToggle" class="nav flex-column" style="display: none;">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</div>
+<div class="container" id="images">
+	<div class="row">
+	<div class="column">
+		<img id="one" src="sky1.jpeg" width="300px" height="300px">
+		<img id="two" src="sky2.jpeg" width="300px" height="300px">
+		<img id="three" src="sky3.jpeg" width="300px" height="300px">
+	</div>		
+</div>
+</div>
+<script>
+$(document).ready(function(){
+$('input').click(function(){
+	var ab=$("#navToggle");
+	ab.fadeToggle(500);
+});
+
+$('input').click(function(){
+	var ab=$("#navToggle");
+	if($('body').css('paddingLeft')  == "100px"){
+	$('body').animate({paddingLeft:"0px"},1000);
+	}
+	else{
+	$('body').animate({paddingLeft:"100px"},1000);	
+	}	
+});
+});
+
+</script>
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="https://bitstorm.org/jquery/shadow-animation/jquery.animate-shadow-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

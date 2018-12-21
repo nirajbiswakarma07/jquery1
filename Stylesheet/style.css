@@ -1,0 +1,37 @@
+body
+{
+background-color:pink;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  padding: 4px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+#one{
+	box-shadow: none;
+}
+#one:hover{
+box-shadow: 55px 13px 55px 45px rgba(0,0,0,0.75);
+}
+#two{
+	box-shadow: none;
+}
+#two:hover{
+box-shadow: 55px 13px 55px 45px rgba(0,0,0,0.75);
+}
+
+#three{
+	box-shadow: none;
+}
+#three:hover{
+box-shadow: 55px 13px 55px 45px rgba(0,0,0,0.75);
+}
+
